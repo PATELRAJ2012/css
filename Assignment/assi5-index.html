@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4,300px 250px 300px 300px);
+            gap: 10px;
+            background-color: black;
+
+        }
+
+        .item5 {
+            grid-column: 5;
+            /* grid-column-end: 6; */
+            grid-row-start: 1;
+            grid-row-end: 3;
+            color: white;
+            padding: 10px;
+            margin-left: 100px;
+            margin-right: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .main .item5 ul li .a{
+            color: orangered;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: clamp(14px,1.2vw,20px);
+
+        }
+        h1{
+            font-size: clamp(16px,1.2vw,25px);  
+        }
+
+        ul li {
+            list-style: none;
+            padding: 10px;
+
+        }
+
+
+
+        .fa-brands {
+            color: white;
+            padding: 10px;
+           
+
+        }
+
+        .item1 {
+            grid-column: 1;
+            grid-column-end: 4;
+        }
+
+        .item7 {
+            grid-column: 2;
+            grid-column-end: 4;
+            grid-row: 2;
+
+        }
+
+        .item13 {
+            grid-column: 1 ;
+            grid-column-end: 3;
+            grid-row: 3;
+
+        }
+
+        .item15 {
+            grid-column: 3;
+            grid-column-end: 5;
+            grid-row: 3;
+        }
+
+        .item3 {
+            grid-column: 1;
+            grid-row: 2;
+        }
+        .item6{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .item8 {
+            grid-column: 1;
+            grid-row: 2;
+        }
+        .item10{
+            grid-row: 4;
+        }
+        .item9 {
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row: 3;
+        }
+        .item11{
+            grid-row: 4;
+        }
+        .item12{
+            grid-row: 4;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+       
+      
+        @media only screen and (max-width:992px) {
+            .main{
+                /* display: grid; */
+                grid-template-columns: repeat(4,1fr);
+            }
+            .item5{
+                margin-left: 100px;
+            margin-right: 20px;
+            margin-top: 20px; 
+            }
+          
+        }
+        @media only screen and (max-width:768px) {
+            .main{
+                /* display: grid; */
+                grid-template-columns: repeat(2,1fr);
+            }
+            .item5{
+                margin: 10px 0px 10px 15px;
+            }
+          
+        }
+        @media only screen and (max-width:500px) {
+            .main{
+                /* display: grid; */
+                grid-template-columns: repeat(2,1fr);
+            }
+            .item5{
+                margin: 5px 5px 5px 10px;
+            }
+          
+        .fa-brands {
+            padding: 10px;
+      
+           
+
+        }
+          
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="item item1">
+            <img src="/IMAGS/item-1.jpg" alt="">
+        </div>
+        <div class="item item2">
+            <img src="/IMAGS/item-8.jpg" alt="">
+        </div>
+        <div class="item item3">
+            <img src="/IMAGS/item-3.jpg" alt="">
+        </div>
+        <div class="item item4">
+            <img src="/IMAGS/item-4.jpg" alt="">
+        </div>
+        <div class="item item5">
+            <h3>SHUTTER</h3>
+            <ul>
+                <li ><a href="#" class="a">HOME</a></li>
+                <li><a href="#">PHOTOS</a></li>
+                <li><a href="#">BIO</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            <div class="icon">
+                <a href=""> <i class="fa-brands fa-facebook"></i></a>
+                <a href=""> <i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="item item6">
+            <img src="/IMAGS/item-5.jpg" alt="">
+        </div>
+        <div class="item item7">
+            <img src="/IMAGS/item-6.jpg" alt="">
+        </div>
+        <div class="item item8">
+            <img src="/IMAGS/item-7.jpg" alt="">
+        </div>
+        <div class="item item9">
+            <img src="/IMAGS/item-2.jpg" alt="">
+        </div>
+        <div class="item item10">
+            <img src="/IMAGS/item-9.jpg" alt="">
+        </div>
+        <div class="item item11">
+            <img src="/IMAGS/item-1.jpg" alt="">
+        </div>
+        <div class="item item12">
+            <img src="/IMAGS/item-10.jpg" alt="">
+        </div>
+     
+    </div>
+</body>
+
+</html>

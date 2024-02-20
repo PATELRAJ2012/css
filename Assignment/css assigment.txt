@@ -1,0 +1,196 @@
+Q-1 What are the benefits of using CSS?
+--> css is offer a multiple benefits for web development:
+	1.Separation of Concerns
+    	2.Flexibility
+	3.Responsive Design
+	4.Search Engine Optimization (SEO)
+    	5.Compatibility
+
+Q-2 what are the disadvantage of css?
+--> it also some disadvantage in css
+	1.Browser Compatibility
+  	2.Maintenance Challenges
+	3.Performance Impact
+	4.No Built-in Support for Logic
+
+Q-3 What is the difference between CSS2 and CSS3?
+--> CSS3 is the latest version of the Cascading Style Sheets (CSS) language some change and improvement in css2.Here are some key differences between CSS2 and CSS3:
+	1.Modules: CSS3 is organized into modules, each addressing specific aspects of styling and layout. This modular approach allows for more granular control and easier maintenance. 	CSS2, on the other hand, does not have this modular structure.
+	2.Media Queries: CSS3 introduces media queries, allowing styles to be applied conditionally based on characteristics of the device or viewport, such as screen size, resolution, and 	orientation. This enables responsive design, where a single set of HTML content can adapt to different devices and screen sizes.
+
+Q-4 Name a few CSS style components
+--> style components:
+	1.Typography
+	2.Colors and Backgrounds
+	3.Box Model
+	4.Layout
+	5.Borders and Shadows
+
+Q-5 What do you understand by CSS opacity?
+-->  CSS opacity refers to the transparency level of an element on a web page. It is a CSS property that controls the degree to which the content of an element is visible or obscured by it   
+     background. The opacity property accepts a value between 0 and 1, where:
+	1. 0.5 would make the element 50% transparent, allowing 50% of the element's content to show through.
+	2. 0.75 would make the element 75% transparent, allowing 25% of the element's background to show through.
+
+Q-6 how can the back-ground color of an element be changed?
+--> The background color of an element can be changed using CSS by applying the "background-color" property.
+	example:
+		div {
+   		 background-color: red;
+	        }
+	div {
+   		 background-color: rgb(255, 0, 0); 
+		}
+Q-7 How can image repetition of the backup be controlled?
+--> In CSS, you can control the repetition of a background image using the background-repeat property. This property allows you to specify whether and how a background image should  repeat     
+    both horizontally and vertically. The background-repeat property accepts the following values:	
+	1)repeat: The background image will repeat both horizontally and vertically (default behavior).
+  	2)repeat-x: The background image will repeat only horizontally.
+  	3)repeat-y: The background image will repeat only vertically.
+ 	4)no-repeat: The background image will not repeat.
+
+Q-8  What is the use of the background-position property?
+--> The background-position property in CSS is used to specify the initial position of a background image within its containing element.such as keywords (e.g.,"top", "bottom"), length    
+    values (e.g., pixels, percentages)
+
+Q-9 Which property controls the image scroll in the background?
+--> The property that controls the scrolling behavior of a background image in CSS is called background-attachment. This property specifies whether the background image should scroll with  
+    the content of the element or remain fixed as the content scrolls.
+	background attachment:scroll,fixed,local
+
+Q-10 Why should background and color be used as separate properties?
+--> Separating background and color properties provides several advantages in terms of code organization, maintainability, and flexibility:
+	1. Modularity and Reusability: Separating background and color properties allows for greater modularity in your CSS code
+	2. Flexibility in Styling: Separating background and color properties provides greater flexibility in styling.
+
+Q-11 How to center block elements using CSS1?
+--> In CSS1, there is no direct method to horizontally center block elements. However, you can achieve centering by using a combination of CSS properties and techniques. One commonly used  
+    method is to set the left and right margins of the block element to auto.
+	example:
+		<div class="centered">
+ 			 content 
+		</div>
+
+Q-12 How to maintain the CSS specifications?
+--> Maintaining CSS specifications involves several key practices to ensure consistency, efficiency, and scalability in your stylesheets. Here are some tips for maintaining CSS    
+    specifications:
+	1.Documentation
+	2.Naming Conventions
+
+Q-13 What are the ways to integrate CSS as a web page?
+--> There are several ways to integrate CSS into a web page, depending on your specific requirements and preferences. Here are the most common methods:
+	example:
+		<!DOCTYPE html>
+	<html>
+	<head>
+    <title>Embedded CSS Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p>This is an example of embedded CSS.</p>
+</body>
+</html>
+
+Q-14 What is embedded style sheets?
+--> Embedded style sheets, also known as internal style sheets, refer to CSS styles that are written directly within the HTML document using the <style> tag. This method allows you to         
+    define CSS rules specific to a particular HTML document without the need for external CSS files.
+	example:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Embedded Style Sheet Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: blue;
+        }
+        p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>heading</h1>
+    <p>This is a paragraph.</p>
+</body>
+</html>
+
+Q-15 What are the external style sheets?
+--> An external style sheet is a separate CSS file that can be accessed by creating a link within the head section of the webpage. Multiple webpages can use the same link to access the 
+    stylesheet. The link to an external style sheet is placed within the head section of the page.
+	Example:
+	<!DOCTYPE html>
+<html>
+<head>
+    <title>External Style Sheet Example</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>this is a heading</h1>
+    <p>this is a paragraph</p>
+</body>
+</html>
+
+Q-16 What are the advantages and disadvantages of using external The advantages of External Style Sheets are as follows :
+--> The advantages of External Style Sheets are as follows :
+ 	• With the help of External Style Sheets, the styles of numerous documents can be organized from one single file.
+	• In External Style Sheets, Classes can be made for use on numerous HTML element types in many forms of the site.
+ 	• In complex contexts, Methods like selector and grouping can be implemented to apply styles.
+
+The disadvantages of External Style Sheets are as follows :
+
+ 	•An extra download is essential to import style information for each file.
+ 	•The execution of the file may be deferred till the external style sheet is loaded.
+ 	• While implementing style sheets, we need to test Web pages with multiple browsers in order to check compatibility issues.
+
+
+Q-17  What is the meaning of the CSS selector?
+--> A CSS selector is the first part of a CSS Rule. It is a pattern of elements and other terms that tell the browser which HTML elements should be selected to have the CSS property values 
+    inside the rule applied to them.
+
+There are 8 types of css selectors:
+	1)Element Selectors
+ 	2)Class Selectors
+	3)ID Selectors
+	4)Attribute Selectors
+	5)Universal Selectors
+	6)Descedant Selectors
+ 	7)General sibling Selectors
+	8)Element Selectors.
+
+Q-18 What are the media types allowed by CSS?
+--> CSS allows you to specify different stylesheets for different media types. Here are the main media types supported by CSS:
+
+ 1)all: Applies to all devices.
+ 2)screen: Intended for color computer screens.
+ 3)print: Intended for paged material and documents viewed on a screen in print preview mode.
+ 4)speech: Intended for screen readers that "read" the page out loud.
+ 5)tv: Intended for television-type devices.
+ 6)projection: Intended for projected presentations, like slideshows.
+ 7)handheld: Intended for handheld devices, such as mobile phones or PDAs.
+ 8)braille: Intended for braille tactile feedback devices.
+ 9)embossed: Intended for paged braille printers.
+ 10)tty: Intended for media using a fixed-pitch character grid, such as teletypes or terminals.
+
+
+Q-19 what is the rule set in css?
+
+--> Each (valid) declaration block is preceded by one or more comma-separated selectors, which are conditions selecting some elements of the page. A selector list and an  associated  
+    declarations block, together, are called a ruleset, or often a rule.
+
+
+
+
+
+
